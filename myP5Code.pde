@@ -11,9 +11,11 @@ setup = function() {
     fill(0, 255 - i, 0);
     text("⸙", 420-i, 390);
   }  
-var FavAnimals = ["Cat","Moose","Goldfish"]
-  for(var D=0; D<FavAnimals.length;D++){
-    text(FavAnimals[D],20,20);
+var FavAnimals = ["Cat","Moose","Goldfish","Turtle","Rabbit"];
+var animalNum=0;
+  while(animalNum<FavAnimals.length){
+    text(FavAnimals[animalNum],50,50+animalNum*60);
+    animalNum++;
   }
 };
 
